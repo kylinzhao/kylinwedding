@@ -30,6 +30,11 @@
 		body{
 			font-family: 'FangSong';
 		}
+
+		h1, h2{
+			margin: 0;
+			padding:0;
+		}
         /**********第一屏*********/
         .first{
             /*background-color: #45b19a;*/
@@ -68,7 +73,7 @@
         	font-family: 'FangSong';
         }
 
-        .left-box{
+        .left-box , .right-box{
         	color: #fff;
         	padding-top: 5%;
         	padding-left: 80px;
@@ -79,12 +84,22 @@
         	text-shadow: 7px 8px 7px #B8B8B8;
         }
 
-        .left-box h1{
+        .left-box h1, .right-box h1{
 			font-size: 180px;
+			margin: 10px;
+			line-height: 1.4em;
 		}
 
-		.left-box h2{
+		.left-box h2, .right-box h2{
 			font-size: 40px;
+			line-height: 1.4em;
+		}
+
+		.right-box{
+			text-align: right;
+			position: absolute;
+			right:0;
+			padding: 4% 5% 0 0 ;
 		}
 
         .first-title{
@@ -114,7 +129,12 @@
             </page>
             <!--第三屏 我-->
             <page class="third">
-                <h1 class="title ani fade-in">Slide3</h1>
+            	<div class="right-box">
+            		<h1>赵梁</h1>
+            		<h2>山西爷们</h2>
+            		<h2>最最最最美丽，我最爱她了什么的</h2>
+            		<h2>哈哈哈文案谁来想</h2>
+            	</div>
             </page>
             <!--第四屏 合影&介绍-->
             <page class="third">
@@ -143,7 +163,7 @@
 				console.info(this);
 			}
 		});
-		slider.goTo(1)
+		slider.goTo(2)
 	};
     </script>
 </body>
