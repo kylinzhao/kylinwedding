@@ -26,6 +26,10 @@
 	}
 	</style>
 	<style type="text/css">
+
+		body{
+			font-family: 'FangSong';
+		}
         /**********第一屏*********/
         .first{
             /*background-color: #45b19a;*/
@@ -38,8 +42,9 @@
         	background-size: 100%;
         }
         /**************第三屏*****************/
-        .job{
-            background-color: #80ac50;
+        .third{
+            background: url(/kylinwedding/images/trd-1.jpg) bottom right no-repeat #000;
+        	background-size: 100%;
         }
 
         .mid-box{
@@ -52,6 +57,7 @@
 			color:#5E5353;
         }
 
+
         .mid-box h1{
         	font-size: 80px;
         	font-family: cursive;
@@ -61,6 +67,22 @@
         	font-size: 40px;
         	font-family: 'FangSong';
         }
+
+        .left-box{
+        	color: #fff;
+        	padding-top: 5%;
+        	padding-left: 20px;
+        	transform: skew(-5deg, -10deg);
+        	text-shadow: 7px 8px 7px #B8B8B8;
+        }
+
+        .left-box h1{
+			font-size: 180px;
+		}
+
+		.left-box h2{
+			font-size: 40px;
+		}
 
         .first-title{
         	width: 80%
@@ -80,9 +102,26 @@
             </page>
             <!--第二屏 媳妇-->
             <page class="second">
-
+            	<div class="left-box">
+            		<h1>刘玮</h1>
+            		<h2>江南姑娘，温柔可人</h2>
+            		<h2>最最最最美丽，我最爱她了什么的</h2>
+            		<h2>哈哈哈文案谁来想</h2>
+            	</div>
             </page>
             <!--第三屏 我-->
+            <page class="third">
+                <h1 class="title ani fade-in">Slide3</h1>
+            </page>
+            <!--第四屏 合影&介绍-->
+            <page class="third">
+                <h1 class="title ani fade-in">Slide3</h1>
+            </page>
+            <!--第五屏 合影&介绍-->
+            <page class="third">
+                <h1 class="title ani fade-in">Slide3</h1>
+            </page>
+            <!--第六屏 合影&介绍-->
             <page class="third">
                 <h1 class="title ani fade-in">Slide3</h1>
             </page>
@@ -92,7 +131,7 @@
     <script>
     window.onload = function(){
 		var container = document.querySelector('slider');
-		var slider = QSlider.define(container,{
+		window.slider = QSlider.define(container,{
 			mode: 'vertical', //horizontal vertical
 			loop: false,
 			//animation: '3d',
@@ -101,6 +140,7 @@
 				console.info(this);
 			}
 		});
+		slider.goTo(1)
 	};
     </script>
 </body>
