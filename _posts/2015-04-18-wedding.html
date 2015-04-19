@@ -26,21 +26,16 @@
 	}
 	</style>
 	<style type="text/css">
-        .title{
-            color: #fff;
-            font-size: 43px;
-            font-weight: normal;
-            text-align: center;
-        }
         /**********第一屏*********/
-        .home{
+        .first{
             /*background-color: #45b19a;*/
-            background: url(/kylinwedding/images/first-bg.jpg);
+            background: url(/kylinwedding/images/first-bg1.jpg);
             background-size: 100% 100%;
         }
         /*************第二屏**************/
-        .info{
-            background-color: #ff787a;
+        .second{
+			background: url(/kylinwedding/images/sec-1@2x.png) bottom right no-repeat #DBD4CA;
+        	background-size: 100%;
         }
         /**************第三屏*****************/
         .job{
@@ -48,26 +43,6 @@
         }
 
         .mid-box{
-        	/*display:-webkit-box; 
-			-webkit-box-orient:horizontal; 
-			-webkit-box-pack:center; 
-			-webkit-box-align:center; 
-			display:-moz-box; 
-			-moz-box-orient:horizontal; 
-			-moz-box-pack:center; 
-			-moz-box-align:center; 
-			display:-o-box; 
-			-o-box-orient:horizontal; 
-			-o-box-pack:center; 
-			-o-box-align:center; 
-			display:-ms-box; 
-			-ms-box-orient:horizontal; 
-			-ms-box-pack:center; 
-			-ms-box-align:center; 
-			display:box; 
-			box-orient:horizontal; 
-			box-pack:center; 
-			box-align:center; */
 			height: 300px;
 			width: 100%;
 			text-align: center;
@@ -87,24 +62,28 @@
         	font-family: 'FangSong';
         }
 
+        .first-title{
+        	width: 80%
+        }
+
     </style>
 </head>
 <body>
     <slider data-slider-wrapper="slider" data-slider-loop="false" data-slider-mode="vertical" data-slider-plugin="landscape-tip" data-slider-animation="cover">
         <wrapper>
-            <!--第一屏-->
-            <page class="home">
+            <!--第一屏 介绍-->
+            <page class="first">
             	<div class="mid-box">
-            		<h1>we will get married</h1>
+            		<img class="first-title" src="/kylinwedding/images/first-font-2x.png" />
             		<h2>刘玮&赵梁</h2>
             	</div>
             </page>
-            <!--第二屏-->
-            <page class="info">
-                <h1 class="title ani shake">Slide2</h1>
+            <!--第二屏 媳妇-->
+            <page class="second">
+
             </page>
-            <!--第三屏-->
-            <page class="job">
+            <!--第三屏 我-->
+            <page class="third">
                 <h1 class="title ani fade-in">Slide3</h1>
             </page>
         </wrapper>
