@@ -29,6 +29,7 @@
 
 		body{
 			font-family: 'FangSong';
+            font-size:100px;
 		}
 
 		h1, h2{
@@ -50,6 +51,22 @@
         .third{
             background: url(/kylinwedding/images/trd-1.jpg) bottom right no-repeat #000;
         	background-size: 100%;
+        }
+
+        .four{
+            background: url(/kylinwedding/images/four-bg.jpg) center center no-repeat #fff;
+            background-size: auto 100%;
+        }
+
+        .five{
+            background: url(/kylinwedding/images/five-bg.jpg) center center no-repeat #000;
+            background-size: auto 100%;
+        }
+
+        .five .right-box{
+            top:100%;
+            height:initial;
+            margin-top:-440px;
         }
 
         .mid-box{
@@ -85,13 +102,13 @@
         }
 
         .left-box h1, .right-box h1{
-			font-size: 180px;
+			font-size: 4rem;
 			margin: 10px;
-			line-height: 1.4em;
+			line-height: 4rem;
 		}
 
 		.left-box h2, .right-box h2{
-			font-size: 40px;
+			font-size: 2rem;
 			line-height: 1.4em;
 		}
 
@@ -137,12 +154,22 @@
             	</div>
             </page>
             <!--第四屏 合影&介绍-->
-            <page class="third">
-                <h1 class="title ani fade-in">Slide3</h1>
+            <page class="four">
+                <div class="left-box">
+                    <h1>说点啥</h1>
+                    <h2>啊哈哈哈哈</h2>
+                    <h2>最最最最美丽，我最爱她了什么的</h2>
+                    <h2>哈哈哈文案谁来想</h2>
+                </div>
             </page>
             <!--第五屏 合影&介绍-->
-            <page class="third">
-                <h1 class="title ani fade-in">Slide3</h1>
+            <page class="five">
+                <div class="right-box">
+                    <h1>赵梁</h1>
+                    <h2>山西爷们</h2>
+                    <h2>最最最最美丽，我最爱她了什么的</h2>
+                    <h2>哈哈哈文案谁来想</h2>
+                </div>
             </page>
             <!--第六屏 合影&介绍-->
             <page class="third">
@@ -163,7 +190,7 @@
 				console.info(this);
 			}
 		});
-		slider.goTo(2)
+		slider.goTo(4)
 	};
     </script>
 </body>
