@@ -29,7 +29,6 @@
 
 		body{
 			font-family: 'FangSong';
-            font-size:100px;
 		}
 
 		h1, h2{
@@ -67,6 +66,11 @@
             top:100%;
             height:initial;
             margin-top:-440px;
+        }
+
+        .last{
+            background: url(/kylinwedding/images/last-bg.jpg) bottom right no-repeat #D4CBC3;
+            background-size: 100%;
         }
 
         .mid-box{
@@ -119,8 +123,10 @@
 			padding: 1% 5% 0 0 ;
 		}
 
-        .first-title{
-        	width: 80%
+        .top-box{
+            padding:20px;
+            font-size: 2rem;
+            text-align: center;
         }
 
     </style>
@@ -172,8 +178,13 @@
                 </div>
             </page>
             <!--第六屏 合影&介绍-->
-            <page class="third">
-                <h1 class="title ani fade-in">Slide3</h1>
+            <page class="last">
+                <div class="top-box">
+                    <p>
+                        2015年5月2日，山西吕梁XX饭店，中午12点<br/>
+                        欢迎您来，把酒言欢，不见不散
+                    </p>
+                </div>
             </page>
         </wrapper>
     </slider>
@@ -190,7 +201,7 @@
 				console.info(this);
 			}
 		});
-		slider.goTo(4)
+		slider.goTo(5)
 	};
     </script>
 </body>
